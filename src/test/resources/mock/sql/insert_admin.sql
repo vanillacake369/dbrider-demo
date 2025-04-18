@@ -1,1 +1,0 @@
-INSERT INTO admin (adm_idx, created_at, updated_at, adm_id, adm_password) VALUES (1, '2024-05-24 10:18:01.000000', '2024-05-24 10:18:01.000000', 'hama-admin-12', '1234qwer!@');

@@ -32,8 +32,10 @@ spring:
     defer-datasource-initialization: true
     show-sql: true
 #    defer-datasource-initialization: false
-#logging:
-#  level:
+logging:
+  level:
+    org.springframework.transaction: DEBUG
+    org.springframework.orm.jpa: DEBUG
 #    org.dbunit: DEBUG
 #    org.hibernate.SQL: DEBUG
 #    org.hibernate.type.descriptor.sql.BasicBinder: TRACE

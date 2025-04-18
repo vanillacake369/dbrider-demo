@@ -35,6 +35,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.DynamicPropertyRegistry;
 import org.springframework.test.context.DynamicPropertySource;
+import org.springframework.transaction.annotation.Transactional;
 import org.testcontainers.containers.MySQLContainer;
 import org.testcontainers.ext.ScriptUtils;
 import org.testcontainers.jdbc.JdbcDatabaseDelegate;
@@ -77,6 +78,7 @@ class AdminRepositoryTest {
         cleanAfter = true,
         transactional = true
     )
+    @Transactional // @DBRider + @Transactional or @DBRider 없음 -> 테스트가 성공함 ㅋㅋㅋㅋㅋ 왜 ??
     void 어드민조회시성공() {
         // GIVEN
         // WHEN
