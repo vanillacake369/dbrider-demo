@@ -1,0 +1,11 @@
+{
+  "admin": [
+    {
+      "adm_idx": "2",
+      "created_at": "2024-05-24 10:18:01",
+      "updated_at": "2024-05-24 10:18:01",
+      "adm_id":"hama-admin-12",
+      "adm_password": "1234qwer!@"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/testdb
+    username: root
+    password: qwer1234
+    hikari:
+      auto-commit: false
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: none # ?? ?? none ?? ??? ? ??
+    properties:
+      hibernate:
+        create_empty_composites:
+          enabled: true
+        jdbc:
+          time_zone: Asia/Seoul
+          batch_size: 1000
+          order_inserts: true
+          order_updates: true
+          auto_quote_keyword: true # ??? ????
+          globally_quoted_identifiers: true # ??? ????
+          show_sql: true # sql ??
+          generate_statistics: true # ???? ??
+          format_sql: true # SQL? ???? ??
+          highlight_sql: true # SQL? ? ??
+          lock_timeout: 777
+        format_sql: true
+      default_batch_fetch_size: 1000
+    open-in-view: false
+    defer-datasource-initialization: true
+    show-sql: true
+#    defer-datasource-initialization: false
+#logging:
+#  level:
+#    org.dbunit: DEBUG
+#    org.hibernate.SQL: DEBUG
+#    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+#    org.hibernate.type.descriptor.sql: TRACE
+#    com.github.database.rider: DEBUG
+#    hibernate.orm.jdbc.bind: TRACE
+#  pattern:
+#    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36}.%M() - %msg%n"
