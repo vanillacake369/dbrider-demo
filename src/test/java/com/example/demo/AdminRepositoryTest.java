@@ -78,7 +78,6 @@ class AdminRepositoryTest {
         cleanAfter = true,
         transactional = true
     )
-    @Transactional // @DBRider + @Transactional or @DBRider 없음 -> 테스트가 성공함 ㅋㅋㅋㅋㅋ 왜 ??
     void 어드민조회시성공() {
         // GIVEN
         // WHEN
