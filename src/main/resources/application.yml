@@ -4,8 +4,6 @@ spring:
     url: jdbc:mysql://localhost:3306/testdb
     username: root
     password: qwer1234
-    hikari:
-      auto-commit: false
   jpa:
     database-platform: org.hibernate.dialect.MySQLDialect
     hibernate:
